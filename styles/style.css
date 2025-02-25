@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+    width: 60%;
+    margin: 1rem auto;
+    padding: 0 3rem 0 3rem;
+    padding-top: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: #224C72 4px solid;
+}
+
+p {
+    margin-left: 1%;
+}
+
+#name {
+    font-size: 3rem;
+    font-family: poppins;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+#title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 30%;
+    padding: 0;
+    position: relative;
+}
+
+nav>a {
+    margin: 20px auto 20px auto;
+}
+
+
+nav>a>img {
+    display: block;
+    width: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#header-left {
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+main {
+    width: 60%;
+    padding: 3rem;
+    padding-top: 1rem;
+    margin: 1rem auto;
+    background-color: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.heading {
+    background-color: #F5FBFF;
+    height: 2rem;
+    padding-left: 1%;
+    border-left: 5px solid #224C72;
+    color: #224C72;
+}
+
+
+
+dt {
+    font-weight: 600;
+    margin-left: 1%;
+}
+
+dd {
+    margin-left: 1.5%;
+    font-style: italic;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+#education-caption {
+    display: inline;
+    float: right;
+    font-size: 0.8em;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0.5cm;
+}
+
+.twocolumns {
+    column-count: 2;
+    column-gap: 10%;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    width: 98%;
+    height: 7rem;
+    margin: 1%;
+    color: grey;
+    background-color: #fff;
+    border: #efefef 2px solid;
+    border-radius: 15px 15px 15px 0px;
+    box-shadow: 5px 5px 10px #e1e1e1;
+    overflow: auto;
+}
+
+.project:hover {
+    background-color: #f5f5f5;
+    width: 103%;
+    margin: 0;
+}
+
+.project h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2%;
+    color: #224C72;
+
+}
+
+.project img {
+    border-radius: 15px 15px 15px 0px;
+    height: 7rem;
+    width: 10rem;
+    margin-right: 1%;
+}
+
+.project>a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-weight: lighter;
+    line-height: 1.2;
+    font-size: 0.9em;
+    text-align: left;
+    text-decoration: none;
+}
+
+.project>a>div {
+    flex: 1 1 70%;
+
+}
+
+.project>a>img {
+    flex: 1 1 25%;
+
+}
+
+.project>a>p {
+    flex: 1 1 5%;
+    margin: auto;
+
+}
+
+.project>a>div>h3 {
+    padding: 0%;
+    margin: 2% 0% 0% 0%;
+
+
+}
+
+.project>a>div>p {
+    padding: 1% 0% 1% 0%;
+    margin: 1% 0% 1% 0%;
+    font-weight: 300;
+
+
+}
+
+.project>a>div>h3+p {
+    padding: 0;
+    margin: 1% 0% 1% 0%;
+    font-style: italic;
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
+.project a:hover {
+    color: #6383a0;
+}
+
+
+.project-date {
+    font-size: 0.9em;
+    font-weight: 300;
+    padding: 2%;
+    text-align: center;
+}
+
+.progress {
+    background-color: #ebebeb;
+    border-radius: 2rem;
+    height: 0.5rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 20vw;
+}
+
+.progress-bar {
+    background-color: #6383a0;
+    border-radius: 20px;
+    height: inherit;
+}
+
+@media only screen and (max-width: 950px) {
+
+    main,
+    header {
+        width: 85%;
+    }
+
+    .project {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    main,
+    header {
+        width: 85%;
+    }
+
+    #name {
+        font-size: 2.5rem;
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    .project p {
+        display: none;
+    }
+
+    .project>a>div>h3+p {
+        display: block;
+    }
+
+    .project>a>div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    .project>a>div>h3 {
+        font-size: 1.5em;
+
+    }
+
+    .project>a>img {
+        flex: 1 1 50%;
+
+    }
+
+    .twocolumns {
+        column-count: 1;
+    }
+
+    .progress-bar {
+        width: 70%;
+    }
+
+    .progress {
+        width: 70%;
+    }
+
+}
